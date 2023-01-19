@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Image</title>
+    <style>
+        /* Set the background color to black */
+        body {
+            background-color: black;
+        }
+        
+        /* Make the image responsive */
+        img {
+            margin-left: 30%;
+            margin-right: 50%;
+            margin-top: 20%;
+            margin-bottom: 800%;
+            width: 10%; /* Set the width to 100% of the parent container */
+            max-width: 10%; /* Set the maximum width to 100% to prevent the image from being too large */
+            height: 10%; /* Set the height to auto so the aspect ratio is maintained */
+        }
+    </style>
+</head>
+<body>
+    <p style="color:red; font-size: x-large;">
+    Made by Bhairav Jangid - January 2023
+    </p>
+    <img src="{{ url_for('send_static', path=image) }}">
+</body>
+</html>
